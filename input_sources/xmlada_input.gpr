@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------
 --                     XML/Ada - An XML suite for Ada95                     --
 --                                                                          --
---                     Copyright (C) 2001-2017, AdaCore                     --
+--                     Copyright (C) 2001-2026, AdaCore                     --
 --                                                                          --
 -- This library is free software;  you can redistribute it and/or modify it --
 -- under terms of the  GNU General Public License  as published by the Free --
@@ -32,6 +32,7 @@ project XmlAda_Input is
    for Library_Dir use "lib/" & Project'Library_Kind;
    for Library_Version use "lib" & Project'Library_Name
       & XmlAda_Shared.So_Ext & "." & XmlAda_Shared.Version;
+   for Run_Path_Option use ();
 
    package Builder  renames XmlAda_Shared.Builder;
    package Compiler renames XmlAda_Shared.Compiler;
